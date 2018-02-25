@@ -1,1 +1,4 @@
 sed -i 's/original/new/g' file.txt
+
+### Proxy for yum
+sed -i 's/proxy/proxy=<protocol>://<host>:<port>/g' /etc/yum.conf
