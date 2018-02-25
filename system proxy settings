@@ -1,0 +1,10 @@
+cat > proxy.sh <<EOF
+#proxy.sh
+export http_proxy=http://host.com:port/
+export ftp_proxy=http://host.com:port/
+export no_proxy=.domain.com,localhost,127.0.0.1
+export HTTP_PROXY=http://host.com:port/
+export FTP_PROXY=http://host.com:port/
+>EOF
+
+mv proxy.sh /etc/profile.d/proxy.sh
